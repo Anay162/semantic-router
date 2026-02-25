@@ -23,22 +23,32 @@ docker run -p 8000:8000 semantic-router
 ```
 
 Once the container is running, open a new terminal window and test the classification logic via a curl request:
+```bash
 curl -X 'POST' \
   'http://127.0.0.1:8000/route' \
   -H 'Content-Type: application/json' \
   -d '{"text": "Calculate the basic tax rate for this region."}'
+```
 
 ## Local Setup & Development
 If you prefer to run the training pipelines, view the benchmark scripts, or open the interactive Jupyter Notebook locally without Docker:
 
 # 1. Create a virtual environment
+```bash
 python -m venv venv
+```
 
 # 2. Activate it (macOS/Linux)
+```bash
 source venv/bin/activate
+```
 
 # 3. Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
 # 4. Run the API locally
+```bash
 python -m uvicorn app.main:app --reload
+```
