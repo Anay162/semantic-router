@@ -1,0 +1,22 @@
+# Environments
+venv/
+env/
+.env
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Data Files (Too large for Git and shouldn't be public)
+data/raw_prompts.json
+data/X_embeddings.npy
+data/y_labels.npy
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
